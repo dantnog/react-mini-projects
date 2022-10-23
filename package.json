@@ -1,8 +1,8 @@
 {
-  "name": "miniprojectshall",
-  "homepage": "./",
+  "name": "react-mini-projects",
   "private": true,
-  "description": "A React page to group mini projects, made with TypeScript and Tailwindcss.",
+  "homepage": "./",
+  "description": "A React page to group mini projects, made with TypeScript and Tailwind CSS.",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

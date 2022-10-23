@@ -1,20 +1,17 @@
 # Mini Projects Hall
 
-A React page to group mini projects, made with TypeScript and Tailwindcss
+A React page to group mini projects, made with TypeScript and Tailwind CSS
+
+## Projects
+
+- Todo
 
 ## How to use
 
-Clone the repo
+Clone the repo and install the dependences
 ```
-$ git clone https://github.com/dantnog/mini-projects-hall.git
-```
-
-Install the dependences
-```
+git clone https://github.com/dantnog/react-mini-projects.git
+cd react-mini-projects
 npm install
-```
-
-Run Vite
-```
 npm run dev
 ```

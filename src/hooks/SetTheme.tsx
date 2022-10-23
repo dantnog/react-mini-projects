@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
 import { FaSun, FaMoon } from 'react-icons/fa'
 
-export default function ChangeTheme() {
+export default function SetTheme() {
   const [dark, setDark] = useState(() => {
     let theme = localStorage.getItem('theme')
 
@@ -19,6 +19,7 @@ export default function ChangeTheme() {
     } else {
       localStorage.setItem('theme', 'dark')
     }
+
     document.body.classList.toggle('dark')
     setDark(prev => !prev)
   }

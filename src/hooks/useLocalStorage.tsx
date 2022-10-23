@@ -1,10 +1,11 @@
-import { TaskItemProps } from "../types/TaskType";
+import { TodoItemProps } from "../types/TodoItemProps"
 
-export function getListFromLS(){
-  let list = localStorage.getItem('taskList') || ''
+export function getTodoListFromLS(){
+  let list = localStorage.getItem('todoList') || ''
   return JSON.parse(list)
 }
 
-export function storeListOnLS(taskList: TaskItemProps[]){
-  localStorage.setItem('taskList', JSON.stringify(taskList))
+export function setTodoListToLS(todoList: TodoItemProps[]){
+  let list = JSON.stringify(todoList)
+  localStorage.setItem('todoList', list)
 }

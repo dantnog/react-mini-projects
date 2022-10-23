@@ -4,9 +4,8 @@ import { TbChecklist } from 'react-icons/tb'
 
 export default function HomeCard(){
   return(
-    <div className="group bg-amber-400 dark:bg-amber-500 flex flex-col rounded-md shadow-md w-full
-         relative">
-      <div className=" rounded-md -translate-x-10 rotate-[-10deg] group-hover:rotate-[-25deg] 
+    <div className="group bg-amber-400 dark:bg-amber-500 flex flex-col rounded-md shadow-md w-full relative">
+      <div className="rounded-md -translate-x-10 rotate-[-10deg] group-hover:rotate-[-25deg] 
             tranform-gpu duration-500 h-40 text-6xl font-bold grid place-items-center">
         TODO
       </div>
