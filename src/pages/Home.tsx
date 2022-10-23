@@ -1,4 +1,4 @@
-import HomeCard from "../components/HomeCard";
+import { HomeTodoCard, HomePasswordCard } from "../components/HomeCards";
 
 export default function Home() {
   return(
@@ -7,7 +7,8 @@ export default function Home() {
         MINI PROJECTS
       </h1>
       <div className="grid place-items-center gap-8 grid-cols-1 sm:grid-cols-2 mt-6">
-        <HomeCard />
+        <HomeTodoCard />
+        <HomePasswordCard />
       </div>
     </section>
   )

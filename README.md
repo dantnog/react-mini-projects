@@ -5,6 +5,7 @@ A React page to group mini projects, made with TypeScript and Tailwind CSS
 ## Projects
 
 - Todo
+- Password Strength
 
 ## How to use
 

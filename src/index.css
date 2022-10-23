@@ -14,3 +14,19 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+/* For Firefox */
+progress::-moz-progress-bar {
+  background: -moz-linear-gradient(0deg, rgb(201, 100, 82) 0%, rgb(119, 204, 110) 100%);
+}
+
+/* For Chrome or Safari */
+progress::-webkit-progress-value {
+  background: -webkit-linear-gradient(0deg, rgb(201, 100, 82) 0%, rgb(119, 204, 110) 100%);
+}
+
+/* For IE10 
+progress {
+  background: linear-gradient(0deg, rgba(185,19,19,1) 0%, rgba(38,187,21,1) 100%);
+}
+*/

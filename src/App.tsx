@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { TodoListProvider } from './context/TodoListContext'
 import Navbar from './layouts/Navbar'
 import Home from './pages/Home'
+import Password from './pages/Password'
 import Todo from './pages/Todo'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/todo" element={<Todo />} />
+            <Route path="/password" element={<Password />} />
         </Routes>
       </div>
     </TodoListProvider>

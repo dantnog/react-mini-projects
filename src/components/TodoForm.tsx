@@ -25,7 +25,7 @@ export default function TodoForm(){
 
   return(
     <form onSubmit={handleForm} 
-      className="flex flex-col sm:flex-row place-items-center bg-gray-100 bg-gray-100 dark:bg-gray-700 rounded-md shadow-md">
+      className="flex flex-col sm:flex-row place-items-center bg-gray-100 dark:bg-gray-700 rounded-md shadow-md">
       <input type="text" 
         className="h-10 px-2 outline-none bg-transparent w-full" 
         value={name}
