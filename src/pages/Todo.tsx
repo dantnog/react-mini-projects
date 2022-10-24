@@ -1,15 +1,13 @@
 import TodoCard from "../components/TodoCard";
 import TodoForm from "../components/TodoForm";
 import { useTodoList } from "../context/TodoListContext";
+import Container from "../layouts/Container";
 
 export default function Todo() {
   const { todoList } = useTodoList()
 
   return(
-      <section className="max-w-3xl px-2 md:px-0 mx-auto">
-        <h1 className="text-5xl my-2 text-green-500 font-semibold text-center">
-          TODO
-        </h1>
+      <Container name="TODO">
         <div className="mt-6">
           <TodoForm />
           <div className="mt-4 flex flex-col-reverse">
@@ -20,6 +18,6 @@ export default function Todo() {
           }
           </div>
         </div>
-      </section>
+      </Container>
   )
 }

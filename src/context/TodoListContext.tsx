@@ -1,22 +1,16 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { getTodoListFromLS, setTodoListToLS } from "../hooks/useLocalStorage";
+import { TodoContextProps } from "../types/TodoContextProps";
 import { TodoItemProps } from "../types/TodoItemProps";
 
-type ProviderProps = {
-  children: ReactNode
-}
-
-type TodoPropsContext = {
-  todoList: TodoItemProps[]
-  addTodo: Function 
-  removeTodo: Function
-  setDone: Function
-}
-
-const TodoListContext = createContext({} as TodoPropsContext)
+const TodoListContext = createContext({} as TodoContextProps)
 
 export function useTodoList() {
   return useContext(TodoListContext)
+}
+
+type ProviderProps = {
+  children: ReactNode
 }
 
 export function TodoListProvider({ children }: ProviderProps) {
