@@ -1,4 +1,4 @@
-import { HomeTodoCard, HomePasswordCard, HomeFinancesCard } from "../components/HomeCards";
+import { HomeTodoCard, HomePasswordCard, HomeFinancesCard, HomeRPSCard } from "../components/HomeCards";
 import Container from "../layouts/Container";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
         <HomeTodoCard />
         <HomePasswordCard />
         <HomeFinancesCard />
+        <HomeRPSCard />
       </div>
     </Container>
   )

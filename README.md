@@ -7,6 +7,7 @@ A React page to group mini projects, made with TypeScript and Tailwind CSS
 - Todo
 - Password Strength
 - Finances
+- Rock Paper Scissors
 
 ## How to use
 

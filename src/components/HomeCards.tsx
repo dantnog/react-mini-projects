@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { TbChecklist } from 'react-icons/tb'
-import { GiDialPadlock, GiCash } from 'react-icons/gi'
+import { GiDialPadlock, GiCash, GiRock, GiPaper, GiScissors } from 'react-icons/gi'
 
 export function HomeTodoCard(){
   return(
@@ -59,3 +59,21 @@ export function HomeFinancesCard(){
     </div>
   )
 }
+
+export function HomeRPSCard(){
+  return(
+    <div className="group bg-teal-400 dark:bg-teal-600 flex flex-col rounded-md shadow-md w-full relative">
+      <div className="text-center h-40 text-8xl font-bold grid place-items-center">
+        <GiRock className="absolute top-[5%] left-[25%] tranform-gpu duration-500 group-hover:animate-bounce" />
+        <GiPaper className="absolute top-[15%] left-[55%] tranform-gpu duration-500 group-hover:animate-bounce" />
+        <GiScissors className="absolute top-[35%] left-[38%] tranform-gpu duration-500 group-hover:animate-bounce" />
+      </div>
+      <div className="p-4 grid place-items-center">
+        <Link to="/rockpaperscissors">
+          <Button name="GO TO"/>
+        </Link>
+      </div>
+    </div>
+  )
+}
+

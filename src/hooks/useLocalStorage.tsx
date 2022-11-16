@@ -5,7 +5,7 @@ import { TodoItemProps } from "../types/TodoItemProps"
  * TODO 
  */
 export function getTodoListFromLS(){
-  let list = localStorage.getItem('todoList') || ''
+  let list = localStorage.getItem('todoList') || '[]'
   return JSON.parse(list)
 }
 
